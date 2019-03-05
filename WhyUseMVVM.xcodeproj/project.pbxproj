@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D84C63D222E95C600DC75EF /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C63C222E95C600DC75EF /* ProfileModel.swift */; };
+		4D84C63F222E960400DC75EF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C63E222E960400DC75EF /* ProfileViewController.swift */; };
+		4D84C641222E962D00DC75EF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84C640222E962D00DC75EF /* ProfileViewModel.swift */; };
 		4DB4D92F221EBF490019F972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D92E221EBF490019F972 /* AppDelegate.swift */; };
 		4DB4D931221EBF490019F972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB4D930221EBF490019F972 /* ViewController.swift */; };
 		4DB4D934221EBF490019F972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4D932221EBF490019F972 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D84C63C222E95C600DC75EF /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		4D84C63E222E960400DC75EF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4D84C640222E962D00DC75EF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4DB4D92B221EBF490019F972 /* WhyUseMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhyUseMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB4D92E221EBF490019F972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB4D930221EBF490019F972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D524E58221EF99A00C6A735 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4DB4D92E221EBF490019F972 /* AppDelegate.swift */,
+				4DB4D93A221EBF4A0019F972 /* LaunchScreen.storyboard */,
+				4DB4D932221EBF490019F972 /* Main.storyboard */,
+				4DB4D93D221EBF4A0019F972 /* Info.plist */,
+				4DB4D938221EBF4A0019F972 /* Assets.xcassets */,
+				4DB4D935221EBF490019F972 /* WhyUseMVVM.xcdatamodeld */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4D84C639222E956E00DC75EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C63C222E95C600DC75EF /* ProfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D84C63A222E957700DC75EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C63E222E960400DC75EF /* ProfileViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D84C63B222E958300DC75EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D84C640222E962D00DC75EF /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4DB4D922221EBF490019F972 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +142,11 @@
 		4DB4D92D221EBF490019F972 /* WhyUseMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				4DB4D92E221EBF490019F972 /* AppDelegate.swift */,
+				4D84C639222E956E00DC75EF /* Models */,
+				4D84C63A222E957700DC75EF /* Views */,
+				4D84C63B222E958300DC75EF /* ViewModels */,
+				4D524E58221EF99A00C6A735 /* SupportFiles */,
 				4DB4D930221EBF490019F972 /* ViewController.swift */,
-				4DB4D932221EBF490019F972 /* Main.storyboard */,
-				4DB4D938221EBF4A0019F972 /* Assets.xcassets */,
-				4DB4D93A221EBF4A0019F972 /* LaunchScreen.storyboard */,
-				4DB4D93D221EBF4A0019F972 /* Info.plist */,
-				4DB4D935221EBF490019F972 /* WhyUseMVVM.xcdatamodeld */,
 			);
 			path = WhyUseMVVM;
 			sourceTree = "<group>";
@@ -259,9 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D84C641222E962D00DC75EF /* ProfileViewModel.swift in Sources */,
 				4DB4D937221EBF490019F972 /* WhyUseMVVM.xcdatamodeld in Sources */,
 				4DB4D931221EBF490019F972 /* ViewController.swift in Sources */,
+				4D84C63F222E960400DC75EF /* ProfileViewController.swift in Sources */,
 				4DB4D92F221EBF490019F972 /* AppDelegate.swift in Sources */,
+				4D84C63D222E95C600DC75EF /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseMVVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseMVVM/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6Z2MCMJT7;
-				INFOPLIST_FILE = WhyUseMVVM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhyUseMVVM/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
